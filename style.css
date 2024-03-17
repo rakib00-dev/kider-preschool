@@ -115,10 +115,18 @@ nav {
 
 #hero-repeat {
   position: absolute;
-  background: #000;
   background: url(/img/bg-header-top.png);
   height: 10px;
   width: 100%;
   top: 0;
+  z-index: 22;
+}
+
+#hero-repeat-two {
+  position: absolute;
+  background: url(/img/bg-header-bottom.png);
+  height: 19px;
+  width: 100%;
+  bottom: 7px;
   z-index: 22;
 }
