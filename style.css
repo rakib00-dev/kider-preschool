@@ -6,6 +6,12 @@
   margin: 0;
 }
 
+:root {
+  --primanry: #fe5d37;
+  --light: #fff5f3;
+  --dark: #103741;
+}
+
 body {
   font-family: 'heebo', sans-serif;
   font-size: 16px;
@@ -30,18 +36,24 @@ a {
 
 nav {
   display: flex;
+  height: 35px;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
+  padding: 26px 0;
 }
 
 #nav-logo {
   font-family: 'Lobster Two', cursives;
   font-size: 40px;
+  color: var(--primanry);
+  line-height: 35px;
+  margin-right: 114px;
 }
 
 #nav-menu ul {
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
   text-transform: capitalize;
 }
 
@@ -49,4 +61,29 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#nav-menu ul li a {
+  padding: 30px 15px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#nav-menu ul li a span {
+  display: inline-flex;
+  transform: rotate(90deg);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+#nav-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--primanry);
+  padding: 8px 20px;
+  color: white;
+  border-radius: 30px;
+  margin-left: 73px;
 }
