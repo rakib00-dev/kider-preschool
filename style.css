@@ -58,7 +58,6 @@ nav {
 
 #nav-menu ul {
   display: flex;
-  /* gap: 20px; */
   text-transform: capitalize;
 }
 
