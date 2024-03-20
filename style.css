@@ -92,6 +92,7 @@ nav {
   color: white;
   border-radius: 30px;
   margin-left: 73px;
+  transition: 0.3s;
 }
 
 #main-hero {
@@ -178,7 +179,8 @@ nav {
   background: var(--dark);
 }
 
-#main-text div a:first-child:hover {
+#main-text div a:first-child:hover,
+#nav-btn a:hover {
   background: #f76f50;
 }
 #main-text div a:last-child:hover {
