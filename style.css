@@ -153,6 +153,58 @@ nav {
 #main-text p {
   font-size: 20px;
   width: 730px;
+  margin-bottom: 20px;
+}
+
+#main-text div {
+  display: inline-flex;
+  gap: 25px;
+}
+
+#main-text div a {
+  color: white;
+  padding: 11px 49px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+#main-text div a:first-child {
+  background: var(--primanry);
+}
+
+#main-text div a:last-child {
+  background: var(--dark);
+}
+
+#main-text div a:first-child:hover {
+  background: #f76f50;
+}
+#main-text div a:last-child:hover {
+  background: #0d2d35;
+}
+
+#main-button div:first-child {
+  margin-bottom: 20px;
+}
+
+#main-button div i {
+  display: flex;
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+#main-button div i:hover {
+  background: var(--primanry);
+  border: none;
 }
 
 #hero-separate {
