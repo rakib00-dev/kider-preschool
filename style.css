@@ -75,9 +75,9 @@ nav {
   color: var(--dark);
 }
 
-#nav-menu ul li a span {
+#nav-menu ul li a i {
   display: inline-flex;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   font-size: 17px;
   font-weight: 700;
 }
