@@ -31,10 +31,16 @@ a {
   color: black;
 }
 
+section {
+  margin: 70px 0;
+}
+
 .wrapper {
   width: 87%;
   margin: auto;
 }
+
+/* header > */
 
 .active-page {
   color: var(--primanry);
@@ -265,4 +271,28 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* < header  */
+
+/* school > */
+#school-section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#school-section #school-text {
+  width: 597px;
+  margin: auto;
+  line-height: 24px;
+  gap: 20px;
+  display: grid;
+  margin-bottom: 39px;
+}
+
+#school-section #school-text h1 {
+  font-family: var(--family);
+  color: var(--dark);
+  font-size: 40px;
 }
