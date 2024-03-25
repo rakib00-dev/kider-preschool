@@ -32,7 +32,11 @@ a {
 }
 
 section {
-  margin: 70px 0;
+  padding: 70px 0;
+}
+
+#main-hero {
+  padding: 0;
 }
 
 .wrapper {
@@ -291,8 +295,110 @@ nav {
   margin-bottom: 39px;
 }
 
+#school-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.school-box {
+  position: relative;
+  display: grid;
+  width: fit-content;
+  place-items: center;
+  transition: 0.3s;
+}
+
 #school-section #school-text h1 {
   font-family: var(--family);
   color: var(--dark);
   font-size: 40px;
+  transition: 0.3s;
 }
+
+.school-circle1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background: #fe5d37;
+  color: white;
+}
+
+.school-circle1 i {
+  font-size: 43px;
+  transition: 0.3s;
+}
+
+.bg-school {
+  position: absolute;
+  height: 38px;
+  background: var(--primanry);
+  width: 19px;
+  border-radius: 100%;
+  top: -4px;
+  left: 76px;
+  z-index: -12;
+}
+
+.bg-school::after {
+  content: '';
+  position: absolute;
+  height: 38px;
+  width: 19px;
+  background: var(--primanry);
+  border-radius: 100%;
+  top: -1px;
+  left: 78px;
+  z-index: -12;
+}
+
+.school-circle2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  padding: 30px;
+  background: #fe5d37;
+  color: white;
+  overflow: hidden;
+}
+
+.circle-text h3 {
+  font-size: 27px;
+  font-family: var(--family);
+  margin-bottom: 20px;
+}
+
+.circle-text p {
+  width: 200px;
+}
+
+.school-box:nth-child(2) .school-circle1,
+.school-box:nth-child(2) .school-circle2 {
+  background: #e8f3ee;
+}
+
+.school-box:nth-child(2) i,
+.school-box:nth-child(2) h3,
+.school-box:nth-child(2) p {
+  color: #2c8754;
+}
+
+.school-box:nth-child(2) .bg-school::after,
+.school-box:nth-child(2) .bg-school {
+  background: #e8f3ee;
+}
+
+.school-box:nth-child(2):hover .school-circle1 i,
+.school-box:nth-child(2):hover .circle-text h3,
+.school-box:nth-child(2):hover .circle-text p {
+  color: white;
+}
+
+/* school < */
