@@ -560,10 +560,47 @@ nav {
 }
 
 #about-imgs {
+  position: relative;
   float: right;
   width: 50%;
+  margin: auto;
 }
 
+#about-imgs .about-imgs img {
+  border-radius: 50%;
+  border: 20px solid var(--light);
+  transition: 0.3s;
+}
+
+.about-imgs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#about-imgs img:first-child {
+  position: absolute;
+  top: -60px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+}
+
+#about-imgs img:nth-child(2),
+#about-imgs img:nth-child(3) {
+  position: relative;
+  height: 250px;
+  bottom: -200px;
+  border: 15px solid var(--light);
+}
+
+#about-imgs .about-imgs img:hover {
+  border-color: var(--primary) !important;
+}
 /* < about section  */
 
 /* scripts style > */
