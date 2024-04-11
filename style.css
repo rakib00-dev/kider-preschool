@@ -9,6 +9,7 @@
 
 :root {
   --primary: #fe5d37;
+  --primaryHover: #fd7556;
   --primary-lite: #ffefeb;
   --green: #198754;
   --green-lite: #e8f3ee;
@@ -533,16 +534,21 @@ nav {
 #about-texts h1 {
   font-family: var(--family);
   font-size: 40px;
-  line-height: 35px;
+  text-transform: capitalize;
+  line-height: 38px;
+  color: #3e3e3e;
 }
 
 #about-btn {
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
   left: 0;
   gap: 81px;
   position: relative;
+}
+
+#about-btn a:hover {
+  background: var(--primaryHover);
 }
 
 #about-ceo {
